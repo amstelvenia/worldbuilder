@@ -7,9 +7,7 @@
 </head>
 <body>
   <div class="home-container">
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-          Planets
-      </h2>
+      <h2 class="font-semibold text-xl text-gray-800 leading-tight">Planets</h2>
       <div class="table-responsive table">
         <table border='1'>
             <thead class="header">
