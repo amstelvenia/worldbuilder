@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('planets', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->text('description')->nullable();
             $table->decimal('mass', 20, 10)->nullable();
             $table->decimal('vol_radius', 20, 10)->nullable();
             $table->decimal('equ_radius', 20, 10)->nullable();
@@ -46,6 +47,7 @@ return new class extends Migration
             $table->decimal('average_temp', 20, 10)->nullable();
             $table->decimal('atm_pressure', 20, 10)->nullable();
             $table->text('atm_composition')->nullable();
+            $table->decimal('total_moon_count', 20, 10)->nullable();
             $table->timestamps();
         });
     }
